@@ -19,6 +19,9 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: end;
+  @media (max-width: 740px) {
+    display: none;
+  }
 `
 
 const Ul = styled.ul`

@@ -27,12 +27,18 @@ const HeaderContain = styled.header`
   position: relative;
   max-width: 1154px;
   grid-template-columns: auto 1fr;
+  @media (max-width: 740px) {
+    grid-template-columns: 1fr auto;
+  }
 `
 
 const Div = styled.div`
   display: flex;
   text-align: center;
   align-items: center;
+  @media (max-width: 740px) {
+      justify-content: center;
+  }
 `
 
 const Span = styled.span`
