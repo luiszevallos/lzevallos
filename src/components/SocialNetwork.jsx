@@ -7,10 +7,10 @@ export default function SocialNetwork() {
   return (
     <DivContain>
       <DivIcon>
-        <LinkedInIcon sx={{ color: "#ffffff", fontSize: 60 }}/>
+        <LinkedInIcon sx={{ color: "#ffffff", fontSize: 50 }}/>
       </DivIcon>
       <DivIcon>
-        <InstagramIcon sx={{ color: "#ffffff", fontSize: 60 }}/>
+        <InstagramIcon sx={{ color: "#ffffff", fontSize: 50 }}/>
       </DivIcon>
     </DivContain>
   )

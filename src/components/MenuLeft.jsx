@@ -5,11 +5,31 @@ export default function MenuLeft(props) {
   return (
     <Nav>
       <Ul>
-        <Li>Inicio</Li>
-        <Li>Quien soy</Li>
-        <Li>Tecnologias</Li>
-        <Li>Certificados</Li>
-        <Li>Contactame</Li>
+        <li>
+          <A href="#home">
+            Inicio
+          </A>
+        </li>
+        <li>
+          <A href="#about-me">
+            Quien soy
+          </A>
+        </li>
+        <li>
+          <A href="#tecnology">
+            Tecnologias
+          </A>
+        </li>
+        <li>
+          <A href="#certificates">
+            Certificados
+          </A>
+        </li>
+        <li>
+          <A href="#contact">
+            Contactame
+          </A>
+        </li>
       </Ul>
     </Nav>
   )
@@ -29,16 +49,19 @@ const Ul = styled.ul`
   list-style: none;
 `
 
-const Li = styled.li`
+const A = styled.a`
   color: #ffffff;
   margin: 0 10px;
-  cursor: pointer;
+  font-size: .9em;
+  font-weight: 700;
   padding: 7px 10px;
   border-radius: 5px;
+  text-decoration: none;
   :hover {
     background-color: rgba(255, 255, 255, 0.07);
   }
   :active {
     transform: scale(0.9);
   }
+
 `

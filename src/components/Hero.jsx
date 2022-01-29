@@ -31,6 +31,12 @@ const Div = styled.div`
   background-repeat: no-repeat;
   position: relative;
   background-image: url(${props => props.fondo});
+  @media (max-width: 600px) {
+    height: 500px;
+  }
+  @media (max-width: 500px) {
+    height: 400px;
+  }
 `
 
 const DivTransparent = styled.div`
@@ -45,7 +51,7 @@ const DivTransparent = styled.div`
 
 const DivHero = styled.div`
   z-index: 3;
-  width: 100%;
+  width: 90%;
   display: flex;
   margin: 0 auto;
   padding: 0 30px;
@@ -68,4 +74,10 @@ const Span = styled.span`
     font-size: 1em;
     font-weight: 600;
   `}
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+    ${props => props.message && css`
+      font-size: .8em;
+    `}
+  }
 `

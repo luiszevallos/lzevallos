@@ -6,6 +6,7 @@ const stateInitial = {
   userLastname: "Zevallos",
   userPhoneNumber: "+584123782039",
   userEmail: "luis_zevallos_17@hotmail.com",
+  aboutMe: "Soy Luis Zevallos, Desarrollador Web de Caracas, venezuela. Tengo mucha experiencia en desarrollar App Moviles, construcción y personalizacion de sitios web",
   userUrls: [
     {
       label: "linkedin",
