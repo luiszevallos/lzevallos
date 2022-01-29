@@ -20,7 +20,9 @@ export default function AboutMe() {
             <P>{aboutMe}</P>
           </div>
           <Button>
-            Descargar CV
+            <A href="download/cv.pdf" download="CV Luis Zevallos">
+              Descargar CV
+            </A>
           </Button>
         </DivDetails>
       </Div>
@@ -64,7 +66,6 @@ const P = styled.p`
 `
 const Button = styled.button`
   border: 0;
-  color: #ffffff;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
@@ -72,4 +73,10 @@ const Button = styled.button`
   :active {
     transform: scale(0.9);
   }
+`
+
+const A = styled.a`
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
 `
