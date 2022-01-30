@@ -22,6 +22,9 @@ export default function Tecnhology() {
 
 const DivContain = styled.div`
   display: grid;
+  max-width: 1024px;
+  margin: 20px auto 0;
+  width: 100%;
 `
 
 const DivDetails = styled.div`
@@ -30,6 +33,14 @@ const DivDetails = styled.div`
 `
 
 const Img = styled.img`
-  width: 60px;
-  margin: 10px 20px;
+  width: 80px;
+  margin: 20px 30px;
+  @media (max-width: 750px) {
+    width: 55px;
+    margin: 20px 20px;
+  }
+  @media (max-width: 600px) {
+    width: 45px;
+    margin: 20px 10px;
+  }
 `

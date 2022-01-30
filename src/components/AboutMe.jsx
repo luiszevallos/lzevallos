@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import ListAltIcon from '@mui/icons-material/ListAlt';
 import styled from 'styled-components';
 import Photo from '../assets/profile.jpg';
 import TitlePrimary from './TitlePrimary';
@@ -21,6 +22,7 @@ export default function AboutMe() {
           </div>
           <Button>
             <A href="download/cv.pdf" download="CV Luis Zevallos">
+              <ListAltIcon style={{marginRight: "5px"}} sx={{ color: "#fff", fontSize: 17 }} />
               Descargar CV
             </A>
           </Button>
@@ -32,8 +34,8 @@ export default function AboutMe() {
 
 const DivContain = styled.div`
   max-width: 1024px;
-  margin: 50px auto;
-  width: 90%;
+  margin: 20px auto 0;
+  width: 100%;
 `
 const Div = styled.div`
   display: grid;
@@ -46,8 +48,8 @@ const Div = styled.div`
 `
 const DivImage = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `
 const Img = styled.img`
   width: 100px;
@@ -77,6 +79,8 @@ const Button = styled.button`
 
 const A = styled.a`
   color: #ffffff;
+  display: flex;
   font-weight: bold;
+  align-items: center;
   text-decoration: none;
 `

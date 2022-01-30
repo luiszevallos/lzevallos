@@ -25,17 +25,20 @@ export default function Hero(props) {
 const Div = styled.div`
   width: 100%;
   display: grid;
-  height: 650px;
-  background-size: 100% 100%;
+  height: 600px;
+  background-size: cover;
   grid-template-rows: 62px 1fr;
   background-repeat: no-repeat;
   position: relative;
   background-image: url(${props => props.fondo});
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     height: 500px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     height: 400px;
+  }
+  @media (max-width: 450px) {
+    height: 300px;
   }
 `
 
@@ -51,7 +54,7 @@ const DivTransparent = styled.div`
 
 const DivHero = styled.div`
   z-index: 3;
-  width: 90%;
+  width: calc(100% - 60px);
   display: flex;
   margin: 0 auto;
   padding: 0 30px;

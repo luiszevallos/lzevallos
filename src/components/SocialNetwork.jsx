@@ -2,10 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function SocialNetwork() {
   return (
     <DivContain>
+      <DivIcon>
+        <a href="https://wa.me/message/SHCANIAWVW6WL1" target="_blank" rel="noreferrer">
+          <WhatsAppIcon sx={{ color: "#ffffff", fontSize: 50 }}/>
+        </a>
+      </DivIcon>
       <DivIcon>
         <a href="https://www.linkedin.com/in/lzevallos20/" target="_blank" rel="noreferrer">
           <LinkedInIcon sx={{ color: "#ffffff", fontSize: 50 }}/>

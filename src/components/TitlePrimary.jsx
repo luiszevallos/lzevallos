@@ -15,7 +15,6 @@ const DivContain = styled.div`
   margin: 50px 10px 30px;
   padding: 0 10px;
   display: flex;
-  justify-content: center;
 `
 const Span = styled.span`
   font-size: 1.7em;

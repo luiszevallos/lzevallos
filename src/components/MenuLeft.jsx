@@ -21,8 +21,8 @@ export default function MenuLeft(props) {
           </A>
         </li>
         <li>
-          <A href="#certificates">
-            Certificados
+          <A href="#work-experience">
+            Experiencia laboral
           </A>
         </li>
         <li>
