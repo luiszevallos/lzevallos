@@ -7,10 +7,14 @@ export default function SocialNetwork() {
   return (
     <DivContain>
       <DivIcon>
-        <LinkedInIcon sx={{ color: "#ffffff", fontSize: 50 }}/>
+        <a href="https://www.linkedin.com/in/lzevallos20/" target="_blank" rel="noreferrer">
+          <LinkedInIcon sx={{ color: "#ffffff", fontSize: 50 }}/>
+        </a>
       </DivIcon>
       <DivIcon>
-        <InstagramIcon sx={{ color: "#ffffff", fontSize: 50 }}/>
+        <a href="https://www.instagram.com/lzevallos20/" target="_blank" rel="noreferrer">
+          <InstagramIcon sx={{ color: "#ffffff", fontSize: 50 }}/>
+        </a>
       </DivIcon>
     </DivContain>
   )

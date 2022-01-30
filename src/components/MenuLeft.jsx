@@ -16,8 +16,8 @@ export default function MenuLeft(props) {
           </A>
         </li>
         <li>
-          <A href="#tecnology">
-            Tecnologias
+          <A href="#technologies">
+            Tecnologías
           </A>
         </li>
         <li>
