@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import styled, { css } from "styled-components"
-import { StateContext } from "../contexts/useStateContext"
-import FondoHero from "../assets/fondo-hero.jpeg"
-import Header from "./Header"
+import styled, { css } from "styled-components";
+import { StateContext } from "../contexts/useStateContext";
+import FondoHero from "../assets/fondo-hero.jpeg";
+import Header from "./Header";
 
 export default function Hero(props) {
   const { state } = useContext(StateContext);
@@ -15,11 +15,13 @@ export default function Hero(props) {
       <DivHero>
         <Span>Hola,</Span>
         <Span primary>{`Soy ${userName} ${userLastname},`}</Span>
-        <Span>Desarrollador Web</Span>
-        <Span message>Desarrollador Front End / Desarrollador Python</Span>
+        <Span>Desarrollador FrontEnd</Span>
+        <Span message>
+          React J's | Next J's | React Native | JavaScript | TypeScript
+        </Span>
       </DivHero>
     </Div>
-  )
+  );
 }
 
 const Div = styled.div`
@@ -30,7 +32,7 @@ const Div = styled.div`
   grid-template-rows: 62px 1fr;
   background-repeat: no-repeat;
   position: relative;
-  background-image: url(${props => props.fondo});
+  background-image: url(${(props) => props.fondo});
   @media (max-width: 700px) {
     height: 500px;
   }
@@ -40,7 +42,7 @@ const Div = styled.div`
   @media (max-width: 450px) {
     height: 300px;
   }
-`
+`;
 
 const DivTransparent = styled.div`
   top: 0;
@@ -50,7 +52,7 @@ const DivTransparent = styled.div`
   z-index: 1;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
-`
+`;
 
 const DivHero = styled.div`
   z-index: 3;
@@ -62,25 +64,31 @@ const DivHero = styled.div`
   flex-direction: column;
   justify-content: center;
   position: relative;
-`
+`;
 
 const Span = styled.span`
   color: #ffffff;
   font-size: 2.7em;
-  max-width: 400px;
+  // max-width: 400px;
   font-weight: 700;
-  ${props => props.primary && css`
-    margin: 10px 0;
-  `}
-  ${props => props.message && css`
-    margin: 10px 0;
-    font-size: 1em;
-    font-weight: 600;
-  `}
+  ${(props) =>
+    props.primary &&
+    css`
+      margin: 10px 0;
+    `}
+  ${(props) =>
+    props.message &&
+    css`
+      margin: 10px 0;
+      font-size: 1em;
+      font-weight: 600;
+    `}
   @media (max-width: 600px) {
     font-size: 1.5em;
-    ${props => props.message && css`
-      font-size: .8em;
-    `}
+    ${(props) =>
+      props.message &&
+      css`
+        font-size: 0.8em;
+      `}
   }
-`
+`;

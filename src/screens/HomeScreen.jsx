@@ -1,10 +1,11 @@
-import React from 'react'
-import AboutMe from '../components/AboutMe'
-import Contact from '../components/Contact'
-import Hero from "../components/Hero"
-import SocialNetwork from "../components/SocialNetwork"
-import Tecnhology from '../components/Tecnhology'
-import WorkExperience from '../components/WorkExperience'
+import React from "react";
+import WorkExperience from "../components/WorkExperience";
+import SocialNetwork from "../components/SocialNetwork";
+import Tecnhology from "../components/Tecnhology";
+import Projects from "../components/Projects";
+import AboutMe from "../components/AboutMe";
+import Contact from "../components/Contact";
+import Hero from "../components/Hero";
 
 export default function HomeScreen() {
   return (
@@ -13,8 +14,9 @@ export default function HomeScreen() {
       <AboutMe />
       <SocialNetwork />
       <Tecnhology />
+      <Projects />
       <WorkExperience />
       <Contact />
     </main>
-  )
+  );
 }

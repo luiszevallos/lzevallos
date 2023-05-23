@@ -1,38 +1,28 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-export default function MenuLeft(props) {
+export default function MenuLeft() {
   return (
     <Nav>
       <Ul>
         <li>
-          <A href="#home">
-            Inicio
-          </A>
+          <A href="#home">Inicio</A>
         </li>
         <li>
-          <A href="#about-me">
-            Quien soy
-          </A>
+          <A href="#about-me">Quien soy</A>
         </li>
         <li>
-          <A href="#technologies">
-            Tecnologías
-          </A>
+          <A href="#technologies">Tecnologías</A>
         </li>
         <li>
-          <A href="#work-experience">
-            Experiencia laboral
-          </A>
+          <A href="#projects">Mis proyectos</A>
         </li>
         <li>
-          <A href="#contact">
-            Contactame
-          </A>
+          <A href="#contact">Contactame</A>
         </li>
       </Ul>
     </Nav>
-  )
+  );
 }
 
 const Nav = styled.nav`
@@ -42,17 +32,17 @@ const Nav = styled.nav`
   @media (max-width: 740px) {
     display: none;
   }
-`
+`;
 
 const Ul = styled.ul`
   display: flex;
   list-style: none;
-`
+`;
 
 const A = styled.a`
   color: #ffffff;
   margin: 0 10px;
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: 700;
   padding: 7px 10px;
   border-radius: 5px;
@@ -63,5 +53,4 @@ const A = styled.a`
   :active {
     transform: scale(0.9);
   }
-
-`
+`;
