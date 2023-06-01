@@ -4,10 +4,16 @@ import TitlePrimary from "./TitlePrimary";
 import LogoFuerza from "../assets/project/fuerza-motriz.jpeg";
 import LogoMinas from "../assets/project/minas-rose.png";
 import LogoFull from "../assets/project/full-motos-chile.jpeg";
+import LogoTecnicom from "../assets/project/tecnicom.png";
 
 export default function Projects() {
   const rows = useMemo(() => {
     return [
+      {
+        project: "Dashboard Tecnicom",
+        url: "https://dashboardbot.tecnicom.pe/",
+        image: LogoTecnicom,
+      },
       {
         project: "Fuerza motriz",
         url: "https://fuerza-motriz.web.app/",
@@ -63,7 +69,7 @@ const DivItem = styled.div`
   border-radius: 7px;
   box-shadow: 10px 8px 20px #f1f2f3;
   padding: 20px;
-  margin: 0 20px;
+  margin: 20px;
   width: 200px;
   height: 200px;
   display: flex;

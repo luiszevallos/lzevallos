@@ -17,8 +17,8 @@ export default function Tecnhology() {
         <Img src={typescript} alt="typescript" />
         <Img src={reactjs} alt="reactjs" />
         <Img src={nextjs} alt="nextjs" />
-        <Img src={python} alt="python" />
-        <Img src={nodejs} alt="nodejs" />
+        {/* <Img src={python} alt="python" /> */}
+        {/* <Img src={nodejs} alt="nodejs" /> */}
       </DivDetails>
     </DivContain>
   );
