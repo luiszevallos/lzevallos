@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Js from "../assets/javascript.png";
-import nodejs from "../assets/nodejs.jpg";
-import python from "../assets/python.png";
+// import nodejs from "../assets/nodejs.jpg";
+// import python from "../assets/python.png";
 import reactjs from "../assets/reactjs.png";
 import nextjs from "../assets/nextjs.jpeg";
 import typescript from "../assets/typescript.svg";
